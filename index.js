@@ -7,10 +7,12 @@ const hbs = require('express-handlebars');
 
 const {PORT} = require('./config');
 const router = require('./routes/blog');
+const logErrors = require('./middleware/logErrors');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(morgan('common'));
 app.use('/blog', router);
+app.use(logErrors);
 
 app.engine('hbs', hbs({defaultLayout: 'main.hbs'}));
 app.set('view engine', 'hbs');
