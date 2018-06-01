@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: 03MskF+Jar3igM1DW6jl6G5o+JzGtZPLUE8U1JJsp3EiSw1Ej1cDAmYMehGlEdmjGlSReW1GjvHXR+3qddh5SiN3dgS7Na+ULDywQkOJsCVotqsPOXDSIdd1Wfnhrd4LDhDrUexK+7GC8vQEEu15CTqSrg+bSm/c7t2TgWIv/nggKacuy3ky5i52lFm7pCm9SMBdhBFDh6viTuJRtmspawwXv0PuXxXNuwH9FaL+4rULiDdZ9pjlWtXaIjhp01QgFsJCSzZj1gIofkmBZWaxWuJ+FMdYUwo9+ZkAXV6HGywLxvEBSpJJe4OjxUtKf6+/F6M0lXnBuiUv+3Z5hhaXgyykz2yrIgCvoIYm9Hoyvm3a3QvprfN+dCUO8qkj0M1i53Hh03vBE8CbeDQAHSjDMd0oRdd+1yfB0lHl+CAt44E6WXU4618clIyGXspgeiVqqQzcZJFvZiX3/bkJb9xHtD7ncmWUNjCO1HEM0N4lf4yhdQtJ9Mk3gM0AjrTgfmcFLrlsoMBGIcxF9issKlR4exrqEORRBVPhGWluTUXRtQyjhQbUxwuhbxoTw1cdUONrlkKiIJsDeLc4q0AdrcT5sW4++Mipw2lljSRiCCwa0M638Bt3m26WeW3+qCjn2/Y5ejNwp7RYufTtTyEVNC+1CBUPFlT5uWo3KwrMW8bE+Us=
+  app: serene-dusk-18580
+  on:
+    repo: rcwlabs/node-blog
